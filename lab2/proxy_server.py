@@ -8,7 +8,6 @@ def main():
     host = 'www.google.com'
     port = 80
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as proxy_start:
-        print('Starting proxy server')
         proxy_start.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         proxy_start.bind((HOST, PORT))
         proxy_start.listen()

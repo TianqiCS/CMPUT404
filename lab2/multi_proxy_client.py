@@ -27,4 +27,6 @@ def connect(address):
         s.close()
 		
 
-main()
+if __name__ == "__main__":
+    main()
+

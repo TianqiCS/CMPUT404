@@ -22,5 +22,6 @@ def main():
     except:
         print("failed to connect")
 
+if __name__ == "__main__":
+    main()
 
-main()
