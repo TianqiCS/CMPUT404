@@ -2,11 +2,8 @@
 import socketserver
 #
 import time
-import email
-import pprint
 import os
 import sys
-from io import StringIO
 
 
 # Copyright 2013 Abram Hindle, Eddie Antonio Santos, Tianqi Wang
@@ -180,12 +177,12 @@ class Parser():
         
         print(request)
         # construct a message from the request string
-        message = email.message_from_file(StringIO(headers))
+        # message = email.message_from_file(StringIO(headers))
         # construct a dictionary containing the headers
-        self.headers = dict(message.items())
+        # self.headers = dict(message.items())
 
-    def getHeader(self):
-        return self.headers
+    #def getHeader(self):
+        #return self.headers
         
     def getLocation(self):
         return self.location
